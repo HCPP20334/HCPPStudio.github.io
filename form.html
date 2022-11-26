@@ -1,0 +1,66 @@
+<html>
+</form>
+ <head>
+  <meta charset="utf-8">
+  <title>video</title>
+ </head>
+ <body>
+ <form action="#" method="#" id="form">
+    <div>
+      <label>
+        Имя:
+        <input type="text" name="name" value="Your URL">
+      </label>
+    </div>
+    <div>
+      test:
+      <select name="plan">
+        <option value="png" selected>codec1</option>
+        <option value="jpg">codec2</option>
+        <option value="bmp">codec3</option>
+      </select>
+    </div>
+    <div>
+      <button type="submit">Отправить</button>
+	  <script>
+	  const form = document.getElementById('form');
+  function getFormValue(event) {
+    event.preventDefault();
+	}
+   form.addEventListener('submit', getFormValue);
+ const name = form.querySelector('[name="name"]'), //получаем поле name
+    age = form.querySelector('[name="age"]'), //получаем поле age
+    terms = form.querySelector('[name="terms"]'), //получаем поле terms
+    plan = form.querySelector('[name="plan"]'); //получаем поле plan
+	 const data = {
+    name: name.value,
+    age: age.value,
+    plan: plan.value,
+    terms: terms.checked
+	
+	};
+	 <img src = name>
+	console.log(data);
+	</script>
+      </div>
+  </form>
+  <a href = "index.html"><img src = "back.png" width="160" height="120">
+ <style>
+ body {
+      font-family: sans-serif;
+      font-weight: 700;
+      background-color: yellow;
+  }
+ 
+      form div {
+      margin: 12px;
+  }
+ 
+      form button {
+      margin-top: 10px;
+      font-weight: 700;
+      padding: 10px 20px;
+      font-size: large;
+  }
+  </style>
+</html>

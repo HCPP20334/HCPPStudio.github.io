@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+ <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+     document.addEventListener('DOMContentLoaded', () => {
+  'use strict';
+
+  const blockLogin = document.getElementById('blockLogin');
+  const login = [];
+  btn.addEventListener('click', () => {
+    blockLogin.addEventListener('submit', event => {
+      event.preventDefault();
+
+      const obj = {};
+
+      for (let elem of blockLogin.elements) {
+        if (elem.tagName === 'INPUT' && elem.checked) {
+          obj[elem.name] = elem.value;
+        }
+      }
+      blockLogin.style.display = "none";
+
+      login.push(obj);
+
+      console.log(login);
+
+    });
+  });
+})
+    </script>
+<style>
+html {
+  background-color: #778899;
+}
+  p 
+  {
+     text-top: 6px;
+   font-size: 15px;
+    text-shadow: red;
+   line-height: 2;
+   color: solid black;
+   width: 620px;
+   border: 2px solid black;
+     background-color: #00FF00;
+	 border-radius: 42px;
+   }
+   body {
+  width: 640px;
+  height: 800px;
+  margin: 0 auto;
+  background-color: #2F4F4F;
+
+  border: 2px solid black;
+  text-align: center;
+  order-radius: 42px;
+}
+gDebug
+{
+   width: 640px;
+  margin: 0 auto;
+  background-color: #00FF00;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+	 }
+	 p1
+	 {
+	    text-top: 6px;
+   font-size: 20px;
+   line-height: 2;
+   color: solid black;
+    text-align: center;
+   }
+    p2
+	 {
+	       text-top: 6px;
+   font-size: 20px;
+   line-height: 2;
+   color: solid black;
+   width: 120px;
+   border: 3px solid black;
+     background-color: #00FF00;
+   }
+	 
+{box-sizing: border-box;}
+video
+{
+input:focus {
+  width: 300px;
+}
+}
+input {
+  width: 250px;
+  height: 42px;
+  padding-left: center;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: center;
+  transition: .3s linear;
+}
+input:focus {
+  width: 300px;
+}
+iframe
+{
+background-color: solid black;
+}
+button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+  a{
+  padding-left: 30px;
+  }
+}
+</style>
+</form>
+ <head>
+  <meta charset="utf-8">
+  <title>video</title>
+ </head>
+ <body>
+ <p>>PS3 Video Loader</p>
+<iframe width="620" height="400" src="video/test.mp4" title="RDR 2 - Скрытые, но безумно крутые детали #2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <form id="blockLogin">
+   <a href="(1)YouTube.html">
+      <input type="text" name="Name" id="name" maxlength="1500" value="" checked>
+	  <button type="submit" id="btn">Зарегистрироваться</button>
+   
+ </body>
+</html>
